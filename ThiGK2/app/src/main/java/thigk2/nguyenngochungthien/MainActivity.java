@@ -11,8 +11,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn1 = findViewById(R.id.btn1);
-    Button btn2 = findViewById(R.id.btn2);
 
 
     @Override
@@ -20,11 +18,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        btn1.setOnClickListener(v -> {
+        Button btn_1 = findViewById(R.id.btn1);
+        Button btn_2 = findViewById(R.id.btn2);
+
+        btn_1.setOnClickListener(v -> {
             Intent intent1 = new Intent(MainActivity.this, MainActivity2.class);
             startActivity(intent1);
         });
-        btn2.setOnClickListener(v -> {
+        btn_2.setOnClickListener(v -> {
             Intent intent2 = new Intent(MainActivity.this, MainActivity3.class);
             startActivity(intent2);
         });
