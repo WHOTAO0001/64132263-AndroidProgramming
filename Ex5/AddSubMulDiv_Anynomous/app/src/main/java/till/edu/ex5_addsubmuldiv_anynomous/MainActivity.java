@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Xu ly cong o day
-                //tim, tham chieu den dieu khien tren tep XML, mapping sang Java file
+                //tim, tham chieu den dieu khien tren tep XML, mapping sa   ng Java file
                 EditText editTextsoA = findViewById(R.id.edtso1);
                 EditText editTextsoB = findViewById(R.id.edtso2);
                 EditText editTextKetQua = findViewById(R.id.edtKQ);
